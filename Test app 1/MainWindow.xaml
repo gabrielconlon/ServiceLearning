@@ -1,0 +1,52 @@
+﻿<Window x:Class="Test_app_1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="600" Width="1000" Loaded="Window_Loaded">
+	<Grid>
+		<Grid.RowDefinitions>
+			<RowDefinition Height="Auto"/>
+			<RowDefinition Height="*"/>
+		</Grid.RowDefinitions>
+		<Menu Height="23" Name="menu1" Grid.Row="0">
+			<MenuItem Header="File">
+				<MenuItem Header="Exit" />
+			</MenuItem>
+			<MenuItem Header="Profile">
+				<MenuItem Header="Create Profile" Click="createStudent_Click">
+					<MenuItem.Icon>
+						<Image><!-- TODO: --></Image>
+					</MenuItem.Icon>
+				</MenuItem>
+				<MenuItem Header="Edit Profile">
+					<MenuItem.Icon>
+						<Image><!--TODO: need to add source --></Image>
+					</MenuItem.Icon>
+				</MenuItem>
+				<Separator />
+				<MenuItem Header="Create Agency Profile" />
+				<MenuItem Header="Edit Agency Profile" />
+			</MenuItem>
+			<MenuItem Header="Options" />
+			<MenuItem Header="Help" />
+		</Menu>
+		<TabControl HorizontalAlignment="Stretch" Name="tabControl1" VerticalAlignment="Stretch" DataContext="{Binding}" TabStripPlacement="Top" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Grid.Row="1">
+			<TabItem Header="Student" Name="student_tab">
+				<Grid>
+					<TextBox Height="23" HorizontalAlignment="Left" Margin="19,127,0,0" Name="studentLastName_TB" VerticalAlignment="Top" Width="120" Text="Last Name"  MouseLeftButtonUp="StudentLastName_TB_OnMouseLeftButtonUp" />
+					<TextBox Height="23" HorizontalAlignment="Left" Margin="145,127,0,0" Name="studentFirstName_TB" Text="First Name" VerticalAlignment="Top" Width="120" MouseLeftButtonUp="StudentFirstName_TB_OnMouseLeftButtonUp" />
+					<TextBox Height="23" HorizontalAlignment="Left" Margin="271,127,0,0" Name="studentMiddleName_TB" Text="Middle Name" VerticalAlignment="Top" Width="120" MouseLeftButtonUp="StudentMiddleName_TB_OnMouseLeftButtonUp" />
+					<TextBox Height="23" HorizontalAlignment="Left" Margin="19,98,0,0" Name="studentID_TB" Text="Student ID" VerticalAlignment="Top" Width="120" DataContext="{Binding}" MouseLeftButtonUp="StudentID_TB_OnMouseLeftButtonUp"/>
+					<TextBox Height="23" HorizontalAlignment="Left" Margin="19,156,0,0" Name="graduationYear_TB" Text="Graduation Year" VerticalAlignment="Top" Width="120" MouseLeftButtonUp="GraduationYear_TB_OnMouseLeftButtonUp"/>
+					<Button Content="Create New" Height="23" HorizontalAlignment="Left" Margin="64,23,0,0" Name="newStudentProfile_BTN" VerticalAlignment="Top" Width="75" />
+					<Button Content="Edit Profile" Height="23" HorizontalAlignment="Left" Margin="316,23,0,0" Name="editProfile_BTN" VerticalAlignment="Top" Width="75" />
+				</Grid>
+			</TabItem>
+			<TabItem Header="Agency" Name="agency_tab">
+				<Expander Header="expander1" Height="153" Name="expander1" Width="323">
+					<Grid />
+				</Expander>
+			</TabItem>
+			<TabItem Header="Faculty" IsEnabled="False" Name="faculty_tab" />
+		</TabControl>
+	</Grid>
+</Window>

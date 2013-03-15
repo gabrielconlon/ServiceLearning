@@ -1,0 +1,11 @@
+Q:\gconlon13\CS472\Final Project\Test app 1\bin\Debug\Test app 1.exe
+Q:\gconlon13\CS472\Final Project\Test app 1\bin\Debug\Test app 1.pdb
+Q:\gconlon13\CS472\Final Project\Test app 1\obj\x86\Debug\MainWindow.baml
+Q:\gconlon13\CS472\Final Project\Test app 1\obj\x86\Debug\MainWindow.g.cs
+Q:\gconlon13\CS472\Final Project\Test app 1\obj\x86\Debug\App.g.cs
+Q:\gconlon13\CS472\Final Project\Test app 1\obj\x86\Debug\Test app 1_MarkupCompile.cache
+Q:\gconlon13\CS472\Final Project\Test app 1\obj\x86\Debug\Test app 1.g.resources
+Q:\gconlon13\CS472\Final Project\Test app 1\obj\x86\Debug\Test_app_1.Properties.Resources.resources
+Q:\gconlon13\CS472\Final Project\Test app 1\obj\x86\Debug\Test app 1.csproj.GenerateResource.Cache
+Q:\gconlon13\CS472\Final Project\Test app 1\obj\x86\Debug\Test app 1.exe
+Q:\gconlon13\CS472\Final Project\Test app 1\obj\x86\Debug\Test app 1.pdb
