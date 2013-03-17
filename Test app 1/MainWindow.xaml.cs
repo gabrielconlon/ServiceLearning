@@ -29,35 +29,33 @@ namespace Test_app_1
 			
 		}
 
-		private void createStudent_Click (object sender, RoutedEventArgs e)
+		private void menuCreateStudent_Click (object sender, RoutedEventArgs e)
 		{
-			CreateStudentProfile form = new CreateStudentProfile();
-			form.Show();
+			StudentProfile Studentform = new StudentProfile();
+			Studentform.Show();
 		}
 
-		private void StudentLastName_TB_OnMouseLeftButtonUp(object sender, MouseButtonEventArgs e)
-		{
-			studentLastName_TB.Clear();
-		}
+        private void menuCreateAgency_Click(object sender, RoutedEventArgs e)
+        {
+            AgencyProfile Agencyform = new AgencyProfile();
+            Agencyform.Show();
+        }
 
-		private void StudentFirstName_TB_OnMouseLeftButtonUp(object sender, MouseButtonEventArgs e)
-		{
-			studentFirstName_TB.Clear();
-		}
+        private void newStudentProfile_BTN_Click(object sender, RoutedEventArgs e)
+        {
+            StudentProfile form = new StudentProfile();
+            form.Show();
+        }
 
-		private void StudentMiddleName_TB_OnMouseLeftButtonUp(object sender, MouseButtonEventArgs e)
-		{
-			studentMiddleName_TB.Clear();
-		}
+        private void studentSearch_BTN_Click(object sender, RoutedEventArgs e)
+        {
+            //TODO: Present a way for the prototype to populate some basic data which can be clicked to show what a student profile window will look like
+        }
 
-		private void StudentID_TB_OnMouseLeftButtonUp(object sender, MouseButtonEventArgs e)
-		{
-			studentID_TB.Clear();
-		}
+        private void menuExit_Click(object sender, RoutedEventArgs e)
+        {
+            this.Close();
+        }
 
-		private void GraduationYear_TB_OnMouseLeftButtonUp(object sender, MouseButtonEventArgs e)
-		{
-			graduationYear_TB.Clear();
-		}
 	}
 }

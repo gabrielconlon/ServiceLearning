@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-\\cs1\CS_Students\gconlon13\CS472\Final Project\Test app 1\obj\x86\Debug\
+C:\Users\Gabriel\Documents\GitHub\ServiceLearning\Test app 1\obj\x86\Debug\
 Test_app_1
 none
 false
 DEBUG;TRACE
-\\cs1\CS_Students\gconlon13\CS472\Final Project\Test app 1\App.xaml
-2-672409033
+C:\Users\Gabriel\Documents\GitHub\ServiceLearning\Test app 1\App.xaml
+3-1110469101
 
-7-971932985
-12-1381780322
-CreateStudentProfile.xaml;MainWindow.xaml;
+8-873700602
+14369250618
+AgencyProfile.xaml;StudentProfile.xaml;MainWindow.xaml;
 
 False
 
