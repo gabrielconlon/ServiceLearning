@@ -19,6 +19,18 @@ namespace Test_app_1
 	/// </summary>
 	public partial class MainWindow : Window
 	{
+		#region Application State Variables
+
+		/// <summary>
+		/// this bool will be used to determine the state of the application
+		/// if someone other than an admin (i.e. student worker) is signed in
+		/// then all notes fields, and any other fields deemed FERPA protected
+		/// will have IsEnabled = false
+		/// </summary>
+		private bool IsAdmin;
+
+		#endregion
+
 		public MainWindow()
 		{
 			InitializeComponent();
@@ -26,7 +38,15 @@ namespace Test_app_1
 
 		private void Window_Loaded(object sender, RoutedEventArgs e)
 		{
-			
+			this.IsEnabled = false;
+			LoginWindow lgn = new LoginWindow(IsAdmin);
+			lgn.Closed += new EventHandler(lgn_Closed);
+			lgn.ShowDialog();
+		}
+
+		void lgn_Closed(object sender, EventArgs e)
+		{
+			this.IsEnabled = true;
 		}
 
 		private void menuCreateStudent_Click (object sender, RoutedEventArgs e)
