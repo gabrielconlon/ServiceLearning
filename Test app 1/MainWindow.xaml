@@ -18,14 +18,8 @@
 			</MenuItem>
 			<MenuItem Header="Profile">
 				<MenuItem Header="Create Profile" Click="menuCreateStudent_Click">
-					<MenuItem.Icon>
-						<Image><!-- TODO: --></Image>
-					</MenuItem.Icon>
 				</MenuItem>
 				<MenuItem Header="Edit Profile">
-					<MenuItem.Icon>
-						<Image><!--TODO: need to add source --></Image>
-					</MenuItem.Icon>
 				</MenuItem>
 				<Separator />
 				<MenuItem Header="Create Agency Profile" Click="menuCreateAgency_Click" />
